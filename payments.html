@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods - CipherWins Casino | Fast & Secure Canadian Banking</title>
+    <meta name="description" content="Discover fast and secure payment methods at CipherWins Casino. Interac e-Transfer, credit cards, and e-wallets with instant deposits and quick withdrawals for Canadian players.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Payment Methods - CipherWins Casino | Fast & Secure Canadian Banking">
+    <meta property="og:description" content="Fast deposits and withdrawals with Canadian payment methods. Interac e-Transfer, Visa, Mastercard and more.">
+    <meta property="og:url" content="https://cipherwins.ca/payments">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_CA">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-purple': '#8B5CF6',
+                        'cyber-violet': '#7C3AED',
+                        'electric-blue': '#06B6D4',
+                        'neon-yellow': '#FDE047',
+                        'cyber-red': '#EF4444'
+                    },
+                    fontFamily: {
+                        'cyber': ['Orbitron', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-violet-900 to-purple-800 text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji" data-emoji="💳">💳</div>
+        <div class="floating-emoji" data-emoji="💰">💰</div>
+        <div class="floating-emoji" data-emoji="🏦">🏦</div>
+        <div class="floating-emoji" data-emoji="⚡">⚡</div>
+        <div class="floating-emoji" data-emoji="🔒">🔒</div>
+        <div class="floating-emoji" data-emoji="💎">💎</div>
+    </div>
+
+    <!-- Animated Background Lights -->
+    <div class="spotlight spotlight-1"></div>
+    <div class="spotlight spotlight-2"></div>
+    <div class="spotlight spotlight-3"></div>
+
+    <!-- Header -->
+    <header class="floating-header fixed top-4 left-4 right-4 z-50 bg-black/20 backdrop-blur-md border border-white/10">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/">
+                <img src="images/logo.png" class="h-12" alt="CipherWins casino logo" />
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="/" class="nav-link hover:text-neon-yellow transition-colors">Home</a></li>
+                <li><a href="#games" class="nav-link hover:text-neon-yellow transition-colors">Games</a></li>
+                <li><a href="/promotions" class="nav-link hover:text-neon-yellow transition-colors">Promotions</a></li>
+                <li><a href="/payments" class="nav-link hover:text-neon-yellow transition-colors">Payments</a></li>
+                <li><a href="#support" class="nav-link hover:text-neon-yellow transition-colors">Support</a></li>
+            </ul>
+            <button class="cta-button md:hidden" onclick="window.location.href='/register'">
+                Join Now
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-5xl lg:text-6xl font-bold mb-6">
+                    <span class="text-shadow-neon text-white">PAYMENT</span>
+                    <span class="text-shadow-neon text-neon-yellow">METHODS</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Fast, secure, and convenient banking options designed specifically for Canadian players. 
+                    Deposit instantly and withdraw your winnings quickly with our trusted payment partners.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Overview -->
+    <section class="py-16 bg-black/20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-shadow-neon">CANADIAN PAYMENT OPTIONS</h2>
+            
+            <!-- Deposit Methods Table -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 text-center">
+                    <i class="fas fa-arrow-down text-neon-yellow mr-3"></i>DEPOSIT METHODS
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-2 border-neon-yellow/30 bg-black/30 backdrop-blur-sm">
+                        <thead>
+                            <tr class="bg-neon-yellow/20 border-b-2 border-neon-yellow/30">
+                                <th class="border-r border-white/20 p-4 text-left font-bold">
+                                    <i class="fas fa-credit-card mr-2"></i>Payment Method
+                                </th>
+                                <th class="border-r border-white/20 p-4 text-left font-bold">
+                                    <i class="fas fa-coins mr-2"></i>Min Deposit
+                                </th>
+                                <th class="border-r border-white/20 p-4 text-left font-bold">
+                                    <i class="fas fa-chart-line mr-2"></i>Max Deposit
+                                </th>
+                                <th class="border-r border-white/20 p-4 text-left font-bold">
+                                    <i class="fas fa-clock mr-2"></i>Processing Time
+                                </th>
+                                <th class="p-4 text-left font-bold">
+                                    <i class="fas fa-percentage mr-2"></i>Fees
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-white/10 hover:bg-neon-yellow/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-university text-neon-yellow mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Interac e-Transfer</div>
+                                            <div class="text-sm text-gray-400">Most Popular</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$20</td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$5,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">INSTANT</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="border-b border-white/10 hover:bg-neon-yellow/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fab fa-cc-visa text-neon-yellow mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Visa</div>
+                                            <div class="text-sm text-gray-400">Credit/Debit</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$20</td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$2,500</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">INSTANT</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="border-b border-white/10 hover:bg-neon-yellow/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fab fa-cc-mastercard text-neon-yellow mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Mastercard</div>
+                                            <div class="text-sm text-gray-400">Credit/Debit</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$20</td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$2,500</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">INSTANT</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="border-b border-white/10 hover:bg-neon-yellow/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-wallet text-neon-yellow mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Skrill</div>
+                                            <div class="text-sm text-gray-400">E-Wallet</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$20</td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$10,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">INSTANT</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="border-b border-white/10 hover:bg-neon-yellow/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-wallet text-neon-yellow mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Neteller</div>
+                                            <div class="text-sm text-gray-400">E-Wallet</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$20</td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$8,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">INSTANT</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="border-b border-white/10 hover:bg-neon-yellow/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-ticket-alt text-neon-yellow mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">PaySafeCard</div>
+                                            <div class="text-sm text-gray-400">Prepaid Voucher</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$20</td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$1,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">INSTANT</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="hover:bg-neon-yellow/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fab fa-bitcoin text-neon-yellow mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Bitcoin</div>
+                                            <div class="text-sm text-gray-400">Cryptocurrency</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$30</td>
+                                <td class="border-r border-white/20 p-4 text-neon-yellow font-semibold">C$15,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-yellow-600 px-2 py-1 rounded text-xs font-bold">15-30 MIN</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Withdrawal Methods Table -->
+            <div>
+                <h3 class="text-3xl font-bold mb-8 text-center">
+                    <i class="fas fa-arrow-up text-cyber-red mr-3"></i>WITHDRAWAL METHODS
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-2 border-cyber-red/30 bg-black/30 backdrop-blur-sm">
+                        <thead>
+                            <tr class="bg-cyber-red/20 border-b-2 border-cyber-red/30">
+                                <th class="border-r border-white/20 p-4 text-left font-bold">
+                                    <i class="fas fa-credit-card mr-2"></i>Payment Method
+                                </th>
+                                <th class="border-r border-white/20 p-4 text-left font-bold">
+                                    <i class="fas fa-coins mr-2"></i>Min Withdrawal
+                                </th>
+                                <th class="border-r border-white/20 p-4 text-left font-bold">
+                                    <i class="fas fa-chart-line mr-2"></i>Max Withdrawal
+                                </th>
+                                <th class="border-r border-white/20 p-4 text-left font-bold">
+                                    <i class="fas fa-clock mr-2"></i>Processing Time
+                                </th>
+                                <th class="p-4 text-left font-bold">
+                                    <i class="fas fa-percentage mr-2"></i>Fees
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-white/10 hover:bg-cyber-red/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-university text-cyber-red mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Interac e-Transfer</div>
+                                            <div class="text-sm text-gray-400">Fastest Option</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$50</td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$5,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">1-3 HOURS</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="border-b border-white/10 hover:bg-cyber-red/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-university text-cyber-red mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Bank Transfer</div>
+                                            <div class="text-sm text-gray-400">Direct to Bank</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$100</td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$10,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-yellow-600 px-2 py-1 rounded text-xs font-bold">1-3 DAYS</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="border-b border-white/10 hover:bg-cyber-red/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-wallet text-cyber-red mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Skrill</div>
+                                            <div class="text-sm text-gray-400">E-Wallet</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$50</td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$5,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">24 HOURS</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="border-b border-white/10 hover:bg-cyber-red/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-wallet text-cyber-red mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Neteller</div>
+                                            <div class="text-sm text-gray-400">E-Wallet</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$50</td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$5,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-green-600 px-2 py-1 rounded text-xs font-bold">24 HOURS</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                            <tr class="hover:bg-cyber-red/10 transition-colors">
+                                <td class="border-r border-white/20 p-4">
+                                    <div class="flex items-center">
+                                        <i class="fab fa-bitcoin text-cyber-red mr-3"></i>
+                                        <div>
+                                            <div class="font-semibold">Bitcoin</div>
+                                            <div class="text-sm text-gray-400">Cryptocurrency</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$100</td>
+                                <td class="border-r border-white/20 p-4 text-cyber-red font-semibold">C$15,000</td>
+                                <td class="border-r border-white/20 p-4">
+                                    <span class="bg-yellow-600 px-2 py-1 rounded text-xs font-bold">1-6 HOURS</span>
+                                </td>
+                                <td class="p-4 text-green-400 font-semibold">FREE</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Withdrawal Guide -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-shadow-neon">
+                    <i class="fas fa-rocket text-neon-yellow mr-4"></i>FAST WITHDRAWAL GUIDE
+                </h2>
+                
+                <div class="bg-black/30 border border-neon-yellow/30 p-8 mb-8 backdrop-blur-sm">
+                    <h3 class="text-2xl font-bold mb-6 text-neon-yellow">
+                        <i class="fas fa-lightbulb mr-3"></i>Pro Tips for Lightning-Fast Withdrawals
+                    </h3>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Getting your winnings quickly at CipherWins Casino requires following a few essential steps. Our withdrawal process is designed to be fast and secure, but players can significantly speed up their cashouts by preparing their accounts properly and understanding our verification requirements.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="step-card bg-black/30 border border-white/20 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-neon-yellow text-black rounded-full flex items-center justify-center font-bold text-xl mr-4">1</div>
+                            <h3 class="text-xl font-bold">Complete KYC Verification</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            Submit your government-issued ID, proof of address, and payment method verification immediately after registration. This one-time process prevents delays during your first withdrawal and ensures compliance with Canadian gaming regulations.
+                        </p>
+                        <div class="mt-4 p-3 bg-neon-yellow/10 border-l-4 border-neon-yellow">
+                            <p class="text-sm"><strong>Required Documents:</strong> Driver's license or passport, utility bill (under 3 months), bank statement or card photo</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card bg-black/30 border border-white/20 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-neon-yellow text-black rounded-full flex items-center justify-center font-bold text-xl mr-4">2</div>
+                            <h3 class="text-xl font-bold">Meet Wagering Requirements</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            Complete all bonus wagering requirements before requesting withdrawals. Check your account dashboard for remaining playthrough amounts. Bonus funds cannot be withdrawn until wagering is complete, but real money deposits can be withdrawn after 1x playthrough.
+                        </p>
+                        <div class="mt-4 p-3 bg-cyber-red/10 border-l-4 border-cyber-red">
+                            <p class="text-sm"><strong>Important:</strong> Withdrawing before completing wagering will forfeit bonus funds and winnings</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card bg-black/30 border border-white/20 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-neon-yellow text-black rounded-full flex items-center justify-center font-bold text-xl mr-4">3</div>
+                            <h3 class="text-xl font-bold">Anti-Money Laundering Compliance</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            Play through your deposit at least once before withdrawing to comply with AML regulations. This standard industry requirement prevents money laundering and ensures legitimate gaming activity. The 1x playthrough applies to all deposit methods.
+                        </p>
+                        <div class="mt-4 p-3 bg-electric-blue/10 border-l-4 border-electric-blue">
+                            <p class="text-sm"><strong>Example:</strong> Deposit C$100, wager C$100 total on any games, then withdraw freely</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card bg-black/30 border border-white/20 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-neon-yellow text-black rounded-full flex items-center justify-center font-bold text-xl mr-4">4</div>
+                            <h3 class="text-xl font-bold">Choose Optimal Withdrawal Method</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            Use the same method for deposits and withdrawals when possible. Interac e-Transfer offers the fastest processing (1-3 hours), while bank transfers take longer but support higher amounts. E-wallets provide a good balance of speed and convenience.
+                        </p>
+                        <div class="mt-4 p-3 bg-green-600/10 border-l-4 border-green-600">
+                            <p class="text-sm"><strong>Fastest:</strong> Interac e-Transfer (1-3 hours) | <strong>Highest Limits:</strong> Bank Transfer (C$10,000)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Tips -->
+                <div class="bg-black/30 border border-white/20 p-8 mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-cyber-red">
+                        <i class="fas fa-exclamation-triangle mr-3"></i>Common Withdrawal Delays & How to Avoid Them
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-times-circle text-cyber-red text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Incomplete Verification</h4>
+                                <p class="text-gray-300">Upload clear, high-quality photos of all required documents. Blurry or partial images will be rejected, causing delays.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-times-circle text-cyber-red text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Incorrect Banking Details</h4>
+                                <p class="text-gray-300">Double-check account numbers, routing information, and recipient names. Incorrect details result in failed transfers and processing delays.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-times-circle text-cyber-red text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Weekend Processing</h4>
+                                <p class="text-gray-300">Bank transfers and some e-wallet withdrawals may experience delays over weekends and holidays. Plan accordingly for time-sensitive withdrawals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-times-circle text-cyber-red text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Multiple Pending Withdrawals</h4>
+                                <p class="text-gray-300">Limit yourself to one pending withdrawal at a time. Multiple requests can trigger additional security reviews and slow processing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Features -->
+                <div class="bg-black/30 border border-electric-blue/30 p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-electric-blue">
+                        <i class="fas fa-shield-alt mr-3"></i>Security & Protection Measures
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 flex items-center">
+                                <i class="fas fa-lock text-neon-yellow mr-2"></i>Advanced Encryption
+                            </h4>
+                            <p class="text-gray-300 mb-4">All withdrawal requests are protected by 256-bit SSL encryption, ensuring your financial information remains secure during transmission.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 flex items-center">
+                                <i class="fas fa-user-check text-neon-yellow mr-2"></i>Identity Verification
+                            </h4>
+                            <p class="text-gray-300 mb-4">Multi-layer identity verification prevents unauthorized access to your account and protects against fraudulent withdrawal attempts.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 flex items-center">
+                                <i class="fas fa-clock text-neon-yellow mr-2"></i>Processing Windows
+                            </h4>
+                            <p class="text-gray-300 mb-4">Withdrawals are processed during business hours (9 AM - 6 PM EST) on weekdays, with limited weekend processing for urgent requests.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 flex items-center">
+                                <i class="fas fa-headset text-neon-yellow mr-2"></i>Dedicated Support
+                            </h4>
+                            <p class="text-gray-300 mb-4">VIP players receive priority withdrawal processing and dedicated support for any banking-related questions or concerns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-12">
+                    <h3 class="text-2xl font-bold mb-4">Ready to Start Winning?</h3>
+                    <p class="text-lg text-gray-300 mb-6">Join CipherWins Casino today and experience fast, secure withdrawals with our premium banking options.</p>
+                    <button class="cta-button cta-primary text-lg px-8 py-4" onclick="window.location.href='/register'">
+                        <i class="fas fa-rocket mr-2"></i>CLAIM YOUR BONUS NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 py-12 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="/">
+                        <img src="images/logo.png" class="h-12" alt="CipherWins casino logo" />
+                    </a>
+                    <p class="ml-4 mt-4  text-gray-300">
+                        Canada's casino #1!
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-neon-yellow transition-colors">Home</a></li>
+                        <li><a href="/privacy-policy" class="hover:text-neon-yellow transition-colors">Privacy policy</a></li>
+                        <li><a href="/responsible-gaming" class="hover:text-neon-yellow transition-colors">Responcible gaming</a></li>
+                        <li><a href="#" class="hover:text-neon-yellow transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Responsible Gaming</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-exclamation-triangle text-neon-yellow mr-2"></i>Gambling can be addictive</li>
+                        <li><i class="fas fa-shield-alt text-neon-yellow mr-2"></i>Play responsibly</li>
+                        <li><i class="fas fa-calendar-alt text-neon-yellow mr-2"></i>21+ only</li>
+                        <li><i class="fas fa-phone text-neon-yellow mr-2"></i>1-866-531-2600 (Problem Gambling)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">How to Login</h4>
+                    <p class="text-sm text-gray-300 mb-4">
+                        Access your account anytime through our secure login portal. Use your registered email and password.
+                    </p>
+                    <button class="cta-button w-full" onclick="window.location.href='/register'">
+                        Login / Register
+                    </button>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 CipherWins Casino. All rights reserved. Licensed by Anjouan Gaming Authority.</p>
+                <p class="mt-2">Gambling can be addictive. Play responsibly. Consult if gambling is legal in your region. 21+</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

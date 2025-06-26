@@ -1,0 +1,498 @@
+/* Custom CSS for CipherWins Casino */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", monospace;
+  line-height: 1.6;
+}
+
+/* Floating Elements Animation */
+.floating-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-emoji {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.3;
+  animation: float 20s infinite linear;
+}
+
+.floating-emoji:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 25s;
+}
+
+.floating-emoji:nth-child(2) {
+  left: 20%;
+  animation-delay: -5s;
+  animation-duration: 30s;
+}
+
+.floating-emoji:nth-child(3) {
+  left: 30%;
+  animation-delay: -10s;
+  animation-duration: 20s;
+}
+
+.floating-emoji:nth-child(4) {
+  left: 70%;
+  animation-delay: -15s;
+  animation-duration: 35s;
+}
+
+.floating-emoji:nth-child(5) {
+  left: 80%;
+  animation-delay: -20s;
+  animation-duration: 28s;
+}
+
+.floating-emoji:nth-child(6) {
+  left: 90%;
+  animation-delay: -25s;
+  animation-duration: 22s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+  }
+}
+
+/* Spotlight Animation */
+.spotlight {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(253, 224, 71, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.spotlight-1 {
+  top: 20%;
+  left: 10%;
+  animation: spotlight-move-1 15s infinite ease-in-out;
+}
+
+.spotlight-2 {
+  top: 60%;
+  right: 10%;
+  animation: spotlight-move-2 20s infinite ease-in-out;
+}
+
+.spotlight-3 {
+  bottom: 20%;
+  left: 50%;
+  animation: spotlight-move-3 18s infinite ease-in-out;
+}
+
+@keyframes spotlight-move-1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(100px, -50px);
+  }
+}
+
+@keyframes spotlight-move-2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-80px, 60px);
+  }
+}
+
+@keyframes spotlight-move-3 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-60px, -40px);
+  }
+}
+
+/* Header Styles */
+.floating-header {
+  backdrop-filter: blur(10px);
+  border-radius: 0;
+}
+
+/* Text Shadow Effects */
+.text-shadow-neon {
+  text-shadow: 0 0 10px rgba(253, 224, 71, 0.5), 0 0 20px rgba(253, 224, 71, 0.3);
+}
+
+/* Button Styles */
+.cta-button {
+  padding: 12px 24px;
+  border: 2px solid;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-primary {
+  background: #fde047;
+  color: #000;
+  border-color: #fde047;
+}
+
+.cta-primary:hover {
+  background: #facc15;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(253, 224, 71, 0.3);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #fde047;
+  border-color: #fde047;
+}
+
+.cta-secondary:hover {
+  background: #fde047;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(253, 224, 71, 0.3);
+}
+
+/* Bonus Box */
+.bonus-box {
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bonus-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #fde047, #ef4444, #8b5cf6, #fde047);
+  z-index: -1;
+  animation: border-glow 3s linear infinite;
+}
+
+@keyframes border-glow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hero Image */
+.hero-image-container {
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+  border: 2px solid rgba(253, 224, 71, 0.3);
+}
+
+/* Step Cards */
+.step-card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  border-color: #fde047;
+  box-shadow: 0 10px 30px rgba(253, 224, 71, 0.2);
+}
+
+.step-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Game Cards */
+.game-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.game-image {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.game-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.game-card:hover .game-overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fde047;
+  color: #000;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  background: #facc15;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  border-color: #fde047;
+  background: rgba(253, 224, 71, 0.1);
+}
+
+/* Provider Cards */
+.provider-card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.provider-card:hover {
+  background: rgba(253, 224, 71, 0.1);
+  border-color: #fde047;
+  transform: translateY(-2px);
+}
+
+/* Support Cards */
+.support-card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  border-color: #fde047;
+  background: rgba(253, 224, 71, 0.1);
+}
+
+/* Promo Cards */
+.promo-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+  border-color: #fde047;
+  box-shadow: 0 10px 30px rgba(253, 224, 71, 0.2);
+}
+
+/* Trust Badges */
+.trust-badge {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.trust-badge:hover {
+  transform: translateY(-3px);
+  border-color: #fde047;
+}
+
+/* FAQ Styles */
+.faq-item {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: rgba(253, 224, 71, 0.1);
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .floating-emoji {
+    font-size: 1.5rem;
+  }
+
+  .spotlight {
+    width: 200px;
+    height: 200px;
+  }
+
+  .text-shadow-neon {
+    font-size: 2.5rem !important;
+  }
+
+  .bonus-box {
+    margin-bottom: 2rem;
+  }
+
+  .step-card {
+    padding: 1rem;
+  }
+}
+
+/* Animation Delays for Entrance Effects */
+.step-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.step-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.step-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.step-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.game-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.game-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.game-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.game-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.game-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.game-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+/* Parallax Effect */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fde047;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}

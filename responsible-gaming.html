@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsible Gaming - CipherWins Casino | Play Safe, Get Help When Needed</title>
+    <meta name="description" content="CipherWins Casino promotes responsible gaming. Find Canadian gambling addiction resources, self-assessment tools, and tips for safe gaming. Get help when you need it.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Responsible Gaming - CipherWins Casino | Play Safe, Get Help When Needed">
+    <meta property="og:description" content="Comprehensive responsible gaming resources for Canadian players. Self-assessment tools, addiction help, and safe gaming practices.">
+    <meta property="og:url" content="https://cipherwins.ca/responsible-gaming">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_CA">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-purple': '#8B5CF6',
+                        'cyber-violet': '#7C3AED',
+                        'electric-blue': '#06B6D4',
+                        'neon-yellow': '#FDE047',
+                        'cyber-red': '#EF4444'
+                    },
+                    fontFamily: {
+                        'cyber': ['Orbitron', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-violet-900 to-purple-800 text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji" data-emoji="🛡️">🛡️</div>
+        <div class="floating-emoji" data-emoji="💚">💚</div>
+        <div class="floating-emoji" data-emoji="🤝">🤝</div>
+        <div class="floating-emoji" data-emoji="⚖️">⚖️</div>
+        <div class="floating-emoji" data-emoji="🎯">🎯</div>
+        <div class="floating-emoji" data-emoji="📞">📞</div>
+    </div>
+
+    <!-- Animated Background Lights -->
+    <div class="spotlight spotlight-1"></div>
+    <div class="spotlight spotlight-2"></div>
+    <div class="spotlight spotlight-3"></div>
+
+    <!-- Header -->
+    <header class="floating-header fixed top-4 left-4 right-4 z-50 bg-black/20 backdrop-blur-md border border-white/10">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/">
+                <img src="images/logo.png" class="h-12" alt="CipherWins casino logo" />
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="/" class="nav-link hover:text-neon-yellow transition-colors">Home</a></li>
+                <li><a href="#games" class="nav-link hover:text-neon-yellow transition-colors">Games</a></li>
+                <li><a href="/promotions" class="nav-link hover:text-neon-yellow transition-colors">Promotions</a></li>
+                <li><a href="/payments" class="nav-link hover:text-neon-yellow transition-colors">Payments</a></li>
+                <li><a href="#support" class="nav-link hover:text-neon-yellow transition-colors">Support</a></li>
+            </ul>
+            <button class="cta-button md:hidden" onclick="window.location.href='/register'">
+                Join Now
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-5xl lg:text-6xl font-bold mb-6">
+                    <span class="text-shadow-neon text-white">RESPONSIBLE</span>
+                    <span class="text-shadow-neon text-neon-yellow">GAMING</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    At CipherWins Casino, we believe gaming should always be fun, safe, and within your means. 
+                    We're committed to promoting responsible gambling and providing support when you need it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Help Banner -->
+    <section class="py-8 bg-cyber-red/20 border-y-2 border-cyber-red/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-4 text-cyber-red">
+                    <i class="fas fa-exclamation-triangle mr-3"></i>NEED IMMEDIATE HELP?
+                </h2>
+                <p class="text-lg mb-4">If you're struggling with gambling addiction, help is available 24/7</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:1-866-531-2600" class="bg-cyber-red hover:bg-red-600 text-white px-6 py-3 font-bold transition-colors">
+                        <i class="fas fa-phone mr-2"></i>1-866-531-2600 (Canada)
+                    </a>
+                    <a href="tel:1-888-230-3505" class="bg-cyber-red hover:bg-red-600 text-white px-6 py-3 font-bold transition-colors">
+                        <i class="fas fa-phone mr-2"></i>1-888-230-3505 (Ontario)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Self-Assessment Test -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-shadow-neon">
+                    <i class="fas fa-clipboard-check text-neon-yellow mr-4"></i>GAMBLING SELF-ASSESSMENT
+                </h2>
+                
+                <div class="bg-black/30 border border-neon-yellow/30 p-8 mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-neon-yellow">
+                        <i class="fas fa-question-circle mr-3"></i>Do You Have a Gambling Problem?
+                    </h3>
+                    <p class="text-lg mb-6 text-gray-300">
+                        Answer these questions honestly to assess your gambling habits. This test is confidential and designed to help you recognize potential warning signs.
+                    </p>
+                    
+                    <form id="self-assessment-form" class="space-y-6">
+                        <div class="question-card bg-black/20 border border-white/10 p-6">
+                            <h4 class="font-bold mb-4">1. Do you often gamble longer than you originally planned?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="q1" value="0" class="mr-3">
+                                    <span>Never</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q1" value="1" class="mr-3">
+                                    <span>Sometimes</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q1" value="2" class="mr-3">
+                                    <span>Most of the time</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q1" value="3" class="mr-3">
+                                    <span>Almost always</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-card bg-black/20 border border-white/10 p-6">
+                            <h4 class="font-bold mb-4">2. Do you often gamble until your last dollar is gone?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="q2" value="0" class="mr-3">
+                                    <span>Never</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q2" value="1" class="mr-3">
+                                    <span>Sometimes</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q2" value="2" class="mr-3">
+                                    <span>Most of the time</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q2" value="3" class="mr-3">
+                                    <span>Almost always</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-card bg-black/20 border border-white/10 p-6">
+                            <h4 class="font-bold mb-4">3. Have you ever lied to people important to you about how much you gambled?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="q3" value="0" class="mr-3">
+                                    <span>Never</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q3" value="1" class="mr-3">
+                                    <span>Sometimes</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q3" value="2" class="mr-3">
+                                    <span>Most of the time</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q3" value="3" class="mr-3">
+                                    <span>Almost always</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-card bg-black/20 border border-white/10 p-6">
+                            <h4 class="font-bold mb-4">4. Do you feel you have ever had a problem with gambling?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="q4" value="0" class="mr-3">
+                                    <span>No</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q4" value="1" class="mr-3">
+                                    <span>No, but others have said I do</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q4" value="2" class="mr-3">
+                                    <span>Yes, in the past but not now</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q4" value="3" class="mr-3">
+                                    <span>Yes</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-card bg-black/20 border border-white/10 p-6">
+                            <h4 class="font-bold mb-4">5. Do you gamble to escape from problems or when feeling depressed or anxious?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="q5" value="0" class="mr-3">
+                                    <span>Never</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q5" value="1" class="mr-3">
+                                    <span>Sometimes</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q5" value="2" class="mr-3">
+                                    <span>Most of the time</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q5" value="3" class="mr-3">
+                                    <span>Almost always</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-card bg-black/20 border border-white/10 p-6">
+                            <h4 class="font-bold mb-4">6. Have you ever borrowed money or sold anything to get money to gamble?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="q6" value="0" class="mr-3">
+                                    <span>No</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q6" value="1" class="mr-3">
+                                    <span>Yes, but I paid it back quickly</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q6" value="2" class="mr-3">
+                                    <span>Yes, but I always paid it back</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q6" value="3" class="mr-3">
+                                    <span>Yes, and I don't always pay it back</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="question-card bg-black/20 border border-white/10 p-6">
+                            <h4 class="font-bold mb-4">7. Do you feel anxious or irritable when trying to cut down on gambling?</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="q7" value="0" class="mr-3">
+                                    <span>Never</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q7" value="1" class="mr-3">
+                                    <span>Sometimes</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q7" value="2" class="mr-3">
+                                    <span>Most of the time</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="q7" value="3" class="mr-3">
+                                    <span>Almost always</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="button" onclick="calculateScore()" class="cta-button cta-primary text-lg px-8 py-4">
+                                <i class="fas fa-calculator mr-2"></i>GET MY RESULTS
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="assessment-results" class="mt-8 hidden">
+                        <div id="result-content" class="p-6 border-2 rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Canadian Help Resources -->
+    <section class="py-16 bg-black/20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-shadow-neon">
+                <i class="fas fa-maple-leaf text-cyber-red mr-4"></i>CANADIAN GAMBLING ADDICTION RESOURCES
+            </h2>
+            
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- National Resources -->
+                <div class="resource-section bg-black/30 border border-white/20 p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-neon-yellow">
+                        <i class="fas fa-flag mr-3"></i>National Resources
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="resource-card">
+                            <h4 class="font-bold text-lg mb-2">Problem Gambling Helpline</h4>
+                            <p class="text-gray-300 mb-2">24/7 confidential support for problem gamblers and their families</p>
+                            <div class="flex items-center space-x-4">
+                                <a href="tel:1-866-531-2600" class="text-cyber-red font-bold hover:text-red-400">
+                                    <i class="fas fa-phone mr-2"></i>1-866-531-2600
+                                </a>
+                                <span class="text-sm text-gray-400">Free & Confidential</span>
+                            </div>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h4 class="font-bold text-lg mb-2">Gamblers Anonymous Canada</h4>
+                            <p class="text-gray-300 mb-2">Support groups and meetings across Canada</p>
+                            <div class="flex items-center space-x-4">
+                                <a href="https://www.gamblersanonymous.org" class="text-electric-blue font-bold hover:text-blue-400">
+                                    <i class="fas fa-globe mr-2"></i>gamblersanonymous.org
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <h4 class="font-bold text-lg mb-2">Canadian Centre on Substance Use and Addiction</h4>
+                            <p class="text-gray-300 mb-2">Research, resources, and treatment information</p>
+                            <div class="flex items-center space-x-4">
+                                <a href="https://www.ccsa.ca" class="text-electric-blue font-bold hover:text-blue-400">
+                                    <i class="fas fa-globe mr-2"></i>ccsa.ca
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Provincial Resources -->
+                <div class="resource-section bg-black/30 border border-white/20 p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-neon-yellow">
+                        <i class="fas fa-map-marker-alt mr-3"></i>Provincial Resources
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="province-resource">
+                            <h4 class="font-bold">Ontario</h4>
+                            <p class="text-sm text-gray-300">ConnexOntario: <a href="tel:1-888-230-3505" class="text-cyber-red">1-888-230-3505</a></p>
+                        </div>
+                        <div class="province-resource">
+                            <h4 class="font-bold">British Columbia</h4>
+                            <p class="text-sm text-gray-300">BC Problem Gambling Helpline: <a href="tel:1-888-795-6111" class="text-cyber-red">1-888-795-6111</a></p>
+                        </div>
+                        <div class="province-resource">
+                            <h4 class="font-bold">Alberta</h4>
+                            <p class="text-sm text-gray-300">AADAC Helpline: <a href="tel:1-866-332-2322" class="text-cyber-red">1-866-332-2322</a></p>
+                        </div>
+                        <div class="province-resource">
+                            <h4 class="font-bold">Quebec</h4>
+                            <p class="text-sm text-gray-300">Gambling Help & Referral: <a href="tel:1-800-461-0140" class="text-cyber-red">1-800-461-0140</a></p>
+                        </div>
+                        <div class="province-resource">
+                            <h4 class="font-bold">Manitoba</h4>
+                            <p class="text-sm text-gray-300">Addictions Foundation: <a href="tel:1-855-662-6605" class="text-cyber-red">1-855-662-6605</a></p>
+                        </div>
+                        <div class="province-resource">
+                            <h4 class="font-bold">Saskatchewan</h4>
+                            <p class="text-sm text-gray-300">HealthLine 811: <a href="tel:811" class="text-cyber-red">811</a></p>
+                        </div>
+                        <div class="province-resource">
+                            <h4 class="font-bold">Nova Scotia</h4>
+                            <p class="text-sm text-gray-300">Problem Gambling Services: <a href="tel:1-888-347-8888" class="text-cyber-red">1-888-347-8888</a></p>
+                        </div>
+                        <div class="province-resource">
+                            <h4 class="font-bold">New Brunswick</h4>
+                            <p class="text-sm text-gray-300">Addiction Services: <a href="tel:1-866-312-9300" class="text-cyber-red">1-866-312-9300</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playing for Fun Guidelines -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-shadow-neon">
+                    <i class="fas fa-smile text-neon-yellow mr-4"></i>HOW TO KEEP GAMBLING FUN
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Do's -->
+                    <div class="guidelines-section bg-green-600/10 border-2 border-green-400/30 p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-green-400">
+                            <i class="fas fa-check-circle mr-3"></i>DO's - Keep It Fun
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Set a Budget Before You Play</strong>
+                                    <p class="text-sm text-gray-300">Decide how much you can afford to lose and stick to it</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Set Time Limits</strong>
+                                    <p class="text-sm text-gray-300">Use alarms or casino tools to limit your playing time</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Take Regular Breaks</strong>
+                                    <p class="text-sm text-gray-300">Step away from the game every 30-60 minutes</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Play for Entertainment</strong>
+                                    <p class="text-sm text-gray-300">View gambling as paying for entertainment, not making money</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Keep Track of Your Spending</strong>
+                                    <p class="text-sm text-gray-300">Monitor your deposits and losses regularly</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Maintain Other Hobbies</strong>
+                                    <p class="text-sm text-gray-300">Keep gambling as one of many entertainment options</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Don'ts -->
+                    <div class="guidelines-section bg-cyber-red/10 border-2 border-cyber-red/30 p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-cyber-red">
+                            <i class="fas fa-times-circle mr-3"></i>DON'Ts - Warning Signs
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-cyber-red mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Never Chase Your Losses</strong>
+                                    <p class="text-sm text-gray-300">Don't increase bets to try to win back money</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-cyber-red mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Don't Gamble When Upset</strong>
+                                    <p class="text-sm text-gray-300">Avoid gambling when angry, depressed, or stressed</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-cyber-red mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Don't Borrow Money to Gamble</strong>
+                                    <p class="text-sm text-gray-300">Never use credit cards, loans, or borrowed funds</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-cyber-red mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Don't Gamble Under the Influence</strong>
+                                    <p class="text-sm text-gray-300">Alcohol and drugs impair judgment</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-cyber-red mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Don't Lie About Your Gambling</strong>
+                                    <p class="text-sm text-gray-300">Hiding gambling activity is a warning sign</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-cyber-red mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Don't Neglect Responsibilities</strong>
+                                    <p class="text-sm text-gray-300">Never let gambling interfere with work, family, or bills</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- When to Stop -->
+                <div class="bg-black/30 border-2 border-neon-yellow/30 p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-neon-yellow text-center">
+                        <i class="fas fa-stop-circle mr-3"></i>WHEN THE FUN STOPS, STOP
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="stop-sign text-center">
+                            <i class="fas fa-clock text-4xl text-cyber-red mb-4"></i>
+                            <h4 class="font-bold mb-2">Time Signals</h4>
+                            <ul class="text-sm text-gray-300 space-y-1">
+                                <li>Playing longer than planned</li>
+                                <li>Losing track of time</li>
+                                <li>Skipping meals or sleep</li>
+                            </ul>
+                        </div>
+                        <div class="stop-sign text-center">
+                            <i class="fas fa-dollar-sign text-4xl text-cyber-red mb-4"></i>
+                            <h4 class="font-bold mb-2">Money Signals</h4>
+                            <ul class="text-sm text-gray-300 space-y-1">
+                                <li>Spending more than budgeted</li>
+                                <li>Chasing losses</li>
+                                <li>Using bill money</li>
+                            </ul>
+                        </div>
+                        <div class="stop-sign text-center">
+                            <i class="fas fa-heart text-4xl text-cyber-red mb-4"></i>
+                            <h4 class="font-bold mb-2">Emotional Signals</h4>
+                            <ul class="text-sm text-gray-300 space-y-1">
+                                <li>Feeling anxious or stressed</li>
+                                <li>Getting angry at losses</li>
+                                <li>No longer enjoying the game</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Self-Exclusion Tools -->
+    <section class="py-16 bg-black/20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-shadow-neon">
+                    <i class="fas fa-shield-alt text-electric-blue mr-4"></i>SELF-EXCLUSION & CONTROL TOOLS
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="tool-section bg-black/30 border border-electric-blue/30 p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-electric-blue">
+                            <i class="fas fa-ban mr-3"></i>Self-Exclusion Options
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="tool-item">
+                                <h4 class="font-bold mb-2">24-Hour Cooling Off</h4>
+                                <p class="text-sm text-gray-300 mb-2">Take a short break to regain control</p>
+                                <button class="text-electric-blue hover:text-blue-400 text-sm font-bold">
+                                    <i class="fas fa-pause mr-1"></i>Request 24h Break
+                                </button>
+                            </div>
+                            <div class="tool-item">
+                                <h4 class="font-bold mb-2">7-Day Self-Exclusion</h4>
+                                <p class="text-sm text-gray-300 mb-2">One week break from all gaming activities</p>
+                                <button class="text-electric-blue hover:text-blue-400 text-sm font-bold">
+                                    <i class="fas fa-calendar-week mr-1"></i>Request 7-Day Break
+                                </button>
+                            </div>
+                            <div class="tool-item">
+                                <h4 class="font-bold mb-2">30-Day Self-Exclusion</h4>
+                                <p class="text-sm text-gray-300 mb-2">Month-long break to reassess your gambling</p>
+                                <button class="text-electric-blue hover:text-blue-400 text-sm font-bold">
+                                    <i class="fas fa-calendar-alt mr-1"></i>Request 30-Day Break
+                                </button>
+                            </div>
+                            <div class="tool-item">
+                                <h4 class="font-bold mb-2">Permanent Self-Exclusion</h4>
+                                <p class="text-sm text-gray-300 mb-2">Permanently close your account</p>
+                                <button class="text-cyber-red hover:text-red-400 text-sm font-bold">
+                                    <i class="fas fa-times-circle mr-1"></i>Permanent Exclusion
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-section bg-black/30 border border-neon-yellow/30 p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-neon-yellow">
+                            <i class="fas fa-sliders-h mr-3"></i>Limit Setting Tools
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="tool-item">
+                                <h4 class="font-bold mb-2">Deposit Limits</h4>
+                                <p class="text-sm text-gray-300 mb-2">Set daily, weekly, or monthly deposit limits</p>
+                                <button class="text-neon-yellow hover:text-yellow-400 text-sm font-bold">
+                                    <i class="fas fa-coins mr-1"></i>Set Deposit Limits
+                                </button>
+                            </div>
+                            <div class="tool-item">
+                                <h4 class="font-bold mb-2">Loss Limits</h4>
+                                <p class="text-sm text-gray-300 mb-2">Control how much you can lose in a period</p>
+                                <button class="text-neon-yellow hover:text-yellow-400 text-sm font-bold">
+                                    <i class="fas fa-chart-line mr-1"></i>Set Loss Limits
+                                </button>
+                            </div>
+                            <div class="tool-item">
+                                <h4 class="font-bold mb-2">Session Time Limits</h4>
+                                <p class="text-sm text-gray-300 mb-2">Limit how long you can play in one session</p>
+                                <button class="text-neon-yellow hover:text-yellow-400 text-sm font-bold">
+                                    <i class="fas fa-clock mr-1"></i>Set Time Limits
+                                </button>
+                            </div>
+                            <div class="tool-item">
+                                <h4 class="font-bold mb-2">Reality Checks</h4>
+                                <p class="text-sm text-gray-300 mb-2">Get reminders about time and money spent</p>
+                                <button class="text-neon-yellow hover:text-yellow-400 text-sm font-bold">
+                                    <i class="fas fa-bell mr-1"></i>Enable Reminders
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 py-12 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="/">
+                        <img src="images/logo.png" class="h-12" alt="CipherWins casino logo" />
+                    </a>
+                    <p class="ml-4 mt-4  text-gray-300">
+                        Canada's casino #1!
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-neon-yellow transition-colors">Home</a></li>
+                        <li><a href="/privacy-policy" class="hover:text-neon-yellow transition-colors">Privacy policy</a></li>
+                        <li><a href="/responsible-gaming" class="hover:text-neon-yellow transition-colors">Responcible gaming</a></li>
+                        <li><a href="#" class="hover:text-neon-yellow transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Responsible Gaming</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-exclamation-triangle text-neon-yellow mr-2"></i>Gambling can be addictive</li>
+                        <li><i class="fas fa-shield-alt text-neon-yellow mr-2"></i>Play responsibly</li>
+                        <li><i class="fas fa-calendar-alt text-neon-yellow mr-2"></i>21+ only</li>
+                        <li><i class="fas fa-phone text-neon-yellow mr-2"></i>1-866-531-2600 (Problem Gambling)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">How to Login</h4>
+                    <p class="text-sm text-gray-300 mb-4">
+                        Access your account anytime through our secure login portal. Use your registered email and password.
+                    </p>
+                    <button class="cta-button w-full" onclick="window.location.href='/register'">
+                        Login / Register
+                    </button>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 CipherWins Casino. All rights reserved. Licensed by Anjouan Gaming Authority.</p>
+                <p class="mt-2">Gambling can be addictive. Play responsibly. Consult if gambling is legal in your region. 21+</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        function calculateScore() {
+            const form = document.getElementById('self-assessment-form');
+            const formData = new FormData(form);
+            let totalScore = 0;
+            let answeredQuestions = 0;
+
+            // Calculate total score
+            for (let i = 1; i <= 7; i++) {
+                const answer = formData.get(`q${i}`);
+                if (answer !== null) {
+                    totalScore += parseInt(answer);
+                    answeredQuestions++;
+                }
+            }
+
+            if (answeredQuestions < 7) {
+                alert('Please answer all questions to get your results.');
+                return;
+            }
+
+            // Show results
+            const resultsDiv = document.getElementById('assessment-results');
+            const resultContent = document.getElementById('result-content');
+            
+            let resultHTML = '';
+            let borderColor = '';
+            let bgColor = '';
+
+            if (totalScore <= 2) {
+                borderColor = 'border-green-400';
+                bgColor = 'bg-green-600/10';
+                resultHTML = `
+                    <div class="text-center">
+                        <i class="fas fa-check-circle text-6xl text-green-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-green-400 mb-4">Low Risk</h3>
+                        <p class="text-lg mb-4">Your gambling appears to be under control. You show few signs of problem gambling.</p>
+                        <div class="text-left space-y-2">
+                            <h4 class="font-bold">Recommendations:</h4>
+                            <ul class="list-disc list-inside text-sm space-y-1">
+                                <li>Continue setting limits and sticking to them</li>
+                                <li>Keep gambling as entertainment, not income</li>
+                                <li>Take regular breaks during gaming sessions</li>
+                                <li>Monitor your spending and time regularly</li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            } else if (totalScore <= 7) {
+                borderColor = 'border-yellow-400';
+                bgColor = 'bg-yellow-600/10';
+                resultHTML = `
+                    <div class="text-center">
+                        <i class="fas fa-exclamation-triangle text-6xl text-yellow-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-4">Moderate Risk</h3>
+                        <p class="text-lg mb-4">You may be developing some gambling-related problems. Consider taking preventive action.</p>
+                        <div class="text-left space-y-2">
+                            <h4 class="font-bold">Recommendations:</h4>
+                            <ul class="list-disc list-inside text-sm space-y-1">
+                                <li>Set stricter limits on time and money</li>
+                                <li>Use casino self-exclusion tools</li>
+                                <li>Talk to someone you trust about your gambling</li>
+                                <li>Consider calling a helpline for advice</li>
+                                <li>Take regular breaks from gambling</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 p-3 bg-yellow-600/20 rounded">
+                            <p class="text-sm"><strong>Helpline:</strong> <a href="tel:1-866-531-2600" class="text-yellow-400">1-866-531-2600</a></p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                borderColor = 'border-red-400';
+                bgColor = 'bg-red-600/10';
+                resultHTML = `
+                    <div class="text-center">
+                        <i class="fas fa-times-circle text-6xl text-red-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-red-400 mb-4">High Risk</h3>
+                        <p class="text-lg mb-4">Your responses suggest you may have a gambling problem. We strongly recommend seeking help.</p>
+                        <div class="text-left space-y-2">
+                            <h4 class="font-bold">Immediate Actions:</h4>
+                            <ul class="list-disc list-inside text-sm space-y-1">
+                                <li>Contact a gambling helpline today</li>
+                                <li>Consider self-exclusion from all gambling sites</li>
+                                <li>Talk to a trusted friend or family member</li>
+                                <li>Seek professional counseling</li>
+                                <li>Remove access to gambling funds</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 p-4 bg-red-600/20 rounded">
+                            <h4 class="font-bold mb-2">Get Help Now:</h4>
+                            <div class="space-y-2">
+                                <p class="text-sm"><strong>National:</strong> <a href="tel:1-866-531-2600" class="text-red-400">1-866-531-2600</a></p>
+                                <p class="text-sm"><strong>Ontario:</strong> <a href="tel:1-888-230-3505" class="text-red-400">1-888-230-3505</a></p>
+                                <p class="text-sm"><strong>BC:</strong> <a href="tel:1-888-795-6111" class="text-red-400">1-888-795-6111</a></p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            resultContent.innerHTML = resultHTML;
+            resultContent.className = `p-6 border-2 rounded-lg ${borderColor} ${bgColor}`;
+            resultsDiv.classList.remove('hidden');
+            
+            // Scroll to results
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
